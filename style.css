@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(196, 191, 191);
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 700px;
+}
+/* .jokesArea {
+   height: 50%; */
+/* } */
+
+
+/* ^^^^^^^^^^^^^ section I - title ^^^^^^^^^^^^^^^*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* ^^^^^^^^^^^^^ section II - jokes ^^^^^^^^^^^^^^^*/
+
+.joke {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%
+}
+
+.random_joke {
+    height: 20%;
+    width: 70%;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* ^^^^^^^^^^^^^ section III - words and letters ^^^^^^^^^^^^^^^*/
+.letters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 96%;    
+    position: fixed;
+}
+
+button {
+    width: 75px;
+    height: 35px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: rgb(158, 156, 156);
+}
