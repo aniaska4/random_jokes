@@ -41,20 +41,25 @@ const getRandomJokes = () => {
                     return wordText.innerHTML += `<span><li>${e}</li></span>`
                 });
         } else {
-            const jokeText = document.querySelectorAll(".jokesArea");
-            jokeText.innerHTML = "We are sorry, but we can not display the content at the moment"
+            showError("We are sorry, but we can not display the content at the moment")
         }
     }
     req.send();
 }
 
-//function responsive for sort words
+//function responsible for sort words
 function byLength(e1, e2) {
     e1 = e1.toString().length;
     e2 = e2.toString().length;
     return e1 > e2 ? 1 : (e1 < e2 ? -1 : 0);
 }
 
+//function responsible for match words from joke
 function getJokeWordList(joke) {
     return joke.match(/[a-z]+/gi);
+}
+
+function showError(text) {
+    const jokeText = document.querySelectorAll(".jokesArea");
+    jokeText.innerHTML = text;
 }

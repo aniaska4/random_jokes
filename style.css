@@ -46,7 +46,6 @@ body {
 
 .random_joke {
     height: 20%;
-    width: 70%;
     padding-bottom: 20px;
 }
 
@@ -55,7 +54,7 @@ h3 {
     padding-top: 10px;
 }
 
-/* ^^^^^^^^^^^^^ section III - words and letters ^^^^^^^^^^^^^^^*/
+/* ^^^^^^^^^^^^^ section III - words  ^^^^^^^^^^^^^^^*/
 .words {
     display: flex;
     justify-content: space-around;
@@ -74,6 +73,8 @@ h3 {
     position: fixed;
     top: 600px;
 }
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ buttons  ^^^^^^^^^^^^^^^*/
 
 button {
     width: 75px;
